@@ -117,14 +117,14 @@ console.log(findLongestWord(['trying', 'onomatopeia', 'planet']))
 /*
 8. Write a function filterLongWords that takes an array of words and a number i and returns the array of words that are longer than i characters long.
 */
-filterLongWords = (array, number) => {
+filterLongWords = (array, i) => {
   let myArray = [];
-  for (let i = 0; i < myArray.length; i++) {
-    if(array[i].length > number){
+  for (let i = 0; i <= myArray.length; i++) {
+    if(array[i].length > i){
       myArray.push(array[i]);
     };
+    return myArray;
   }
-  return myArray;
 };
 
 console.log(filterLongWords(["left", "right", "up"], 2))
